@@ -1,0 +1,10 @@
+**/.vs
+**/.git
+**/bin
+**/obj
+**/*.user
+**/*.log
+**/[Ll]ogs
+Dockerfile*
+docker-compose*
+.dockerignore

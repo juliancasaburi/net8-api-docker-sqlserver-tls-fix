@@ -1,0 +1,17 @@
+# Automatically merged by `docker compose up` for local development.
+# Overrides docker-compose.yml with hot reload via dotnet watch.
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/src
+      - /src/bin
+      - /src/obj
+    ports:
+      - "8080:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_CONTENTROOT: /src
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
