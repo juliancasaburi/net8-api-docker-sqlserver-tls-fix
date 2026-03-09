@@ -1,0 +1,70 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Package restore
+package-lock.json
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+
+# Web jobs
+**/App_Data/jobs/continuous/
+**/App_Data/jobs/triggered/
+
+# Entity Framework
+*.dbmdl
+*.db
+*.sqlite
+*.sqlite3
+
+# Rider
+.idea/
+
+# Secrets
+*.pfx
+*.key
+appsettings.*.json
