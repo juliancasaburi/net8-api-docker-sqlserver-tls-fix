@@ -15,7 +15,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
 # Allow legacy TLS versions (TLS 1.0/1.1) so older SQL Server instances can negotiate SSL.
-# OpenSSL on Debian Bullseye disables these by default, causing pre-login handshake failures
+# OpenSSL on Debian Bookworm disables these by default, causing pre-login handshake failures
 # against SQL Servers that don't support TLS 1.2+.
 RUN sed -i 's/\[openssl_init\]/# [openssl_init]/' /etc/ssl/openssl.cnf
 RUN printf "\n\n[openssl_init]\nssl_conf = ssl_sect" >> /etc/ssl/openssl.cnf
