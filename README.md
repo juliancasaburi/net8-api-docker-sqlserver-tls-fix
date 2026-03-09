@@ -4,7 +4,6 @@ This is a .NET 8 ASP.NET Core Web API project, containerized with Docker and con
 
 ## Prerequisites
 
-- .NET 8 SDK
 - Docker & Docker Compose
 
 ## Quick Start
